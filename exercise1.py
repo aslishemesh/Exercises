@@ -10,10 +10,8 @@ def check_div_even(num, check):
 
 num = input("Please enter a number: ")
 
-#if check_div_even(num,4) == True:
 if check_div_even(num, 4):
         print "The number %d can be divided by 4" % num
-#elif check_div_even(num, 2) == True:
 elif check_div_even(num, 2):
     print "The number %d is an even number but not a multiple of 4" % num
 else:
@@ -21,7 +19,6 @@ else:
 
 check = input("please enter a number to check (as a divider): ")
 
-#if check_div_even(num,check) == True:
 if check_div_even(num, check):
         print "The number %d can be divided by %d" % (num, check)
 else:
