@@ -20,21 +20,29 @@ def fib(num):
     return fib(num-1) + fib(num-2)
 
 
+num = input("[array] Please enter a number: ")
+if num == 0:
+    print "[array] The Fibonacci sequence for f(", num, ") is: --"
+elif num == 1:
+    print "[array] The Fibonacci sequence for f(", num, ") is: 0"
+else:
+    a = array('i',[0,1])
+    for i in range(num-2):
+        a.append(a[i+1] + a[i])
+    print "[array] The Fibonacci sequence for f(",num,") is:"
+    print a.tolist()
+
+
+
 num = input("Please enter a number: ")
+if num == 0:
+    print "[recursive] The Fibonacci sequence for f(", num, ") is: --"
+else:
+    print "[recursive] The Fibonacci sequence for f(", num, ") is: 0"
+    print "[recursive] The Fibonacci number for f(",num,") is", fib(num)
 
-a = array('i',[0,1])
-for i in range(num-2):
-    a.append(a[i+1] + a[i])
-print "[array] The Fibonacci sequence for f(",num,") is:"
-print a.tolist()
-
-
-
-num = input("Please enter a number: ")
-print "[recursive] The Fibonacci number for f(",num,") is", fib(num)
-
-print "[recursive] The Fibonacci sequence for f(",num,") is:"
-for i in range(num):
-    print fib(i)
+    print "[recursive] The Fibonacci sequence for f(",num,") is:"
+    for i in range(num):
+        print fib(i)
 
 
