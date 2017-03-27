@@ -1,4 +1,4 @@
-# Exercise4 - training.
+# Exercise5 - training.
 
 '''
 Fibonacci numbers:
